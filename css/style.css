@@ -1,5 +1,5 @@
 h1{
-font-family : 'Marcellus SC', serif;    
+font-family : 'Marcellus SC', serif;
 }
 body{
     background-image: url("../img/Background_.jpg");
@@ -7,7 +7,10 @@ body{
 }
 
 .jumbotron{
-    background-color: transparent;
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover;
     color: white;
 }
 .navbar{
@@ -21,4 +24,8 @@ body{
 }
 .navbar-default .navbar-brand{
     color: silver;
+}
+
+#banner{
+    padding: 30px;
 }

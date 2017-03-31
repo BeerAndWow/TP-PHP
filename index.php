@@ -15,10 +15,8 @@ include_once 'function/autoload.php';
 </head>
 <body>
             <!--Header-->
-    <div class="container-fluid">
-    <div class="jumbotron">
-        <h1>Whiskey Me Up</h1> 
-        <p>Welcome to Whiskey Me Up we are an ancestral family company who make and sell the best whisky and cigard from all around the world</p> 
+    <div class="container-fluid" id="banner">
+    <div class="jumbotron"> 
     </div> 
     </div>
             <!--NAVBAR-->
