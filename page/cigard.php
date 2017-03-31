@@ -32,11 +32,7 @@ include_once $folder.'function/autoload.php';
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-<<<<<<< HEAD:cigard.php
-        <a class="navbar-brand" href="index.php">Whiskey Me Up !</a>
-=======
         <a class="navbar-brand" href="<?php echo $folder; ?>index.php">Whiskey Me Up !</a>
->>>>>>> origin/master:page/cigard.php
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,31 +54,28 @@ include_once $folder.'function/autoload.php';
     <div class="container">
         <h2>Nos cigards</h2>
     </div>
-    <div class="container">
+<div class="container">
         <?php
             foreach (getArticlesCategory(1) as $id => $article) {
                 if($id == 0){
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive' src=".$article->picture." >";
-                    echo "<h3>".$article->name."</h3>";
-                    echo "<p>".$article->price."</p>";
+                    echo "<img class='img-responsive thumbnail' src=".$article->picture." >";
+                    echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }
                 elseif ($id == 3 || $id == 6 || $id == 9 || $id == 12) {
                     echo "</div>";
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive' src=".$article->picture." >";
-                    echo "<h3>".$article->name."</h3>";
-                    echo "<p>".$article->price."</p>";
+                    echo "<img class='img-responsive thumbnail' src=".$article->picture." >";
+                    echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }
                 else{
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive' src=".$article->picture." >";
-                    echo "<h3>".$article->name."</h3>";
-                    echo "<p>".$article->price."</p>";
+                    echo "<img class='img-responsive thumbnail' src=".$article->picture." >";
+                    echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }
             }
