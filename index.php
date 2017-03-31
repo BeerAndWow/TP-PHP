@@ -103,7 +103,7 @@ include_once 'config.php';
     <br>
     <div class="container">
         <?php
-            foreach ($result as $key => $value) {
+/*            foreach ($result as $key => $value) {
                 if($key == 0){
                     echo "<div class='row'>";
                     echo "<div class='col-md-3'>";
@@ -128,7 +128,7 @@ include_once 'config.php';
                     echo "<p>"."$value->price"."</p>";
                     echo "</div>";
                 }
-            }
+            }*/
         ?>
     </div>
 
