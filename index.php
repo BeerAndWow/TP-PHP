@@ -112,7 +112,7 @@ include_once 'function/autoload.php';
                     echo "<p>".$article->price."</p>";
                     echo "</div>";
                 }
-                elseif ($id == 3 || $id == 6) {
+                elseif ($id == 3 || $id == 6 || $id == 9 || $id == 12) {
                     echo "</div>";
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
