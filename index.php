@@ -1,6 +1,6 @@
 <?php
 include_once 'config.php';
-include_once 'function/autoload.php';
+//include_once 'function/autoload.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -58,6 +58,7 @@ include_once 'function/autoload.php';
         <p>Welcome to Whiskey Me Up ! we are an ancestral family company who make and sell the best whisky and cigard from all around the world</p> 
     </div> 
     </div>
+    <br>
             <!--Slider-->
     <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -99,46 +100,38 @@ include_once 'function/autoload.php';
     </a>
     </div>
     </div>
+    <br>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et assumenda sed qui quam ut praesentium, molestias ad pariatur eligendi amet nam distinctio vero explicabo saepe aspernatur dolorum maiores ipsam voluptate.</p>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus possimus sapiente corrupti similique, alias voluptatum et adipisci autem ut, eligendi, delectus neque dolor repudiandae eos deserunt debitis. Expedita, maiores, pariatur.</p>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ab nulla numquam similique odit. Consequuntur magni iusto blanditiis, quam fugiat eveniet, itaque, odio error quidem nihil accusamus quasi odit optio!</p>
             </div>
-            <div class="col-md-3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum amet, nemo, ratione incidunt eum quod eos distinctio quo nobis aut iste voluptate sequi cumque. Ullam ipsam facere, adipisci expedita nobis.</p>
-            </div>
         </div>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ratione perferendis maxime cupiditate, quaerat explicabo, sunt! Neque tempore iste tenetur aliquam architecto nisi alias totam reprehenderit iure, qui, nulla ab.</p>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quo aspernatur, nemo. Reprehenderit, necessitatibus, aspernatur consectetur voluptas magnam optio quaerat tempora repudiandae corporis tenetur suscipit perferendis nemo explicabo sed voluptates.</p>
             </div>
-            <div class="col-md-3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sed repellendus molestias id vitae, ratione veritatis commodi dignissimos illo nemo sunt qui veniam ipsum provident, eaque sint possimus, ipsa porro.</p>
-            </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sed repellendus molestias id vitae, ratione veritatis commodi dignissimos illo nemo sunt qui veniam ipsum provident, eaque sint possimus, ipsa porro.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sed repellendus molestias id vitae, ratione veritatis commodi dignissimos illo nemo sunt qui veniam ipsum provident, eaque sint possimus, ipsa porro.</p>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sed repellendus molestias id vitae, ratione veritatis commodi dignissimos illo nemo sunt qui veniam ipsum provident, eaque sint possimus, ipsa porro.</p>
             </div>
-            <div class="col-md-3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sed repellendus molestias id vitae, ratione veritatis commodi dignissimos illo nemo sunt qui veniam ipsum provident, eaque sint possimus, ipsa porro.</p>
-            </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sed repellendus molestias id vitae, ratione veritatis commodi dignissimos illo nemo sunt qui veniam ipsum provident, eaque sint possimus, ipsa porro.</p>
             </div>
         </div>
