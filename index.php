@@ -1,6 +1,7 @@
 <?php
-include_once 'config.php';
-include_once 'function/autoload.php';
+$folder = './../TP-PHP/';
+include_once $folder.'config.php';
+include_once $folder.'function/autoload.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -36,11 +37,11 @@ include_once 'function/autoload.php';
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li><a href="whisky.php">Whisky</a></li>
-            <li><a href="cigard.php">Cigards</a></li>
+            <li><a href="page/whisky.php">Whisky</a></li>
+            <li><a href="page/cigard.php">Cigards</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Inscription</a></li>
+            <li><a href="page/register.php">Inscription</a></li>
             <li><a href="#">Connexion</a></li>
             </li>
         </ul>

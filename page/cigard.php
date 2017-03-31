@@ -1,6 +1,8 @@
+?>
 <?php
-include_once 'config.php';
-include_once 'function/autoload.php';
+$folder = './../../TP-PHP/';
+include_once $folder.'config.php';
+include_once $folder.'function/autoload.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -8,8 +10,8 @@ include_once 'function/autoload.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="<?php echo $folder; ?>css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo $folder; ?>css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
     <title>Whiskey Me Up</title>
 </head>
@@ -30,17 +32,17 @@ include_once 'function/autoload.php';
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php">Whiskey Me Up !</a>
+        <a class="navbar-brand" href="<?php echo $folder; ?>index.php">Whiskey Me Up !</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li><a href="whisky.php">Whisky</a></li>
-            <li><a href="cigard.php">Cigards</a></li>
+            <li><a href="<?php echo $folder; ?>page/whisky.php">Whisky</a></li>
+            <li><a href="<?php echo $folder; ?>page/cigard.php">Cigards</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Inscription</a></li>
+            <li><a href="<?php echo $folder; ?>page/register.php">Inscription</a></li>
             <li><a href="#">Connexion</a></li>
             </li>
         </ul>
@@ -51,7 +53,7 @@ include_once 'function/autoload.php';
     <br>
     <div class="container">
         <?php
-            foreach (getArticlesCategory(0) as $id => $article) {
+            foreach (getArticlesCategory(1) as $id => $article) {
                 if($id == 0){
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
