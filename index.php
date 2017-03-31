@@ -103,7 +103,61 @@ include_once 'function/autoload.php';
     <br>
     <div class="container">
         <?php
-            foreach (getArticles() as $id => $article) {
+            // foreach (getArticles() as $id => $article) {
+            //     if($id == 0){
+            //         echo "<div class='row'>";
+            //         echo "<div class='col-md-4'>";
+            //         echo "<img class='img-responsive' src=".$article->picture." >";
+            //         echo "<h3>".$article->name."</h3>";
+            //         echo "<p>".$article->price."</p>";
+            //         echo "</div>";
+            //     }
+            //     elseif ($id == 3 || $id == 6) {
+            //         echo "</div>";
+            //         echo "<div class='row'>";
+            //         echo "<div class='col-md-4'>";
+            //         echo "<img class='img-responsive' src=".$article->picture." >";
+            //         echo "<h3>".$article->name."</h3>";
+            //         echo "<p>".$article->price."</p>";
+            //         echo "</div>";
+            //     }
+            //     else{
+            //         echo "<div class='col-md-4'>";
+            //         echo "<img class='img-responsive' src=".$article->picture." >";
+            //         echo "<h3>".$article->name."</h3>";
+            //         echo "<p>".$article->price."</p>";
+            //         echo "</div>";
+            //     }
+            // }
+            // echo "------------------------WHISKY------------------";
+            // foreach (getArticlesCategory(0) as $id => $article) {
+            //     if($id == 0){
+            //         echo "<div class='row'>";
+            //         echo "<div class='col-md-4'>";
+            //         echo "<img class='img-responsive' src=".$article->picture." >";
+            //         echo "<h3>".$article->name."</h3>";
+            //         echo "<p>".$article->price."</p>";
+            //         echo "</div>";
+            //     }
+            //     elseif ($id == 3 || $id == 6) {
+            //         echo "</div>";
+            //         echo "<div class='row'>";
+            //         echo "<div class='col-md-4'>";
+            //         echo "<img class='img-responsive' src=".$article->picture." >";
+            //         echo "<h3>".$article->name."</h3>";
+            //         echo "<p>".$article->price."</p>";
+            //         echo "</div>";
+            //     }
+            //     else{
+            //         echo "<div class='col-md-4'>";
+            //         echo "<img class='img-responsive' src=".$article->picture." >";
+            //         echo "<h3>".$article->name."</h3>";
+            //         echo "<p>".$article->price."</p>";
+            //         echo "</div>";
+            //     }
+            // }
+            echo "------------------------CIGARD------------------";
+            foreach (getArticlesCategory(1) as $id => $article) {
                 if($id == 0){
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
