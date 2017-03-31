@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 31 Mars 2017 à 12:24
+-- Généré le :  Ven 31 Mars 2017 à 15:10
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -35,7 +35,17 @@ CREATE TABLE IF NOT EXISTS `articles` (
   `stock` int(4) NOT NULL,
   `id_category` int(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Contenu de la table `articles`
+--
+
+INSERT INTO `articles` (`id`, `name`, `content`, `price`, `picture`, `stock`, `id_category`) VALUES
+(1, 'Whiskay', 'Whiskay is love, Whiskay is life !', 42, 'http://www.whisky.fr/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/m/1/m19358_2.jpg', 2, 0),
+(2, 'Whiskay', 'Whiskay qsdis love, Whiskagrgrgdgrgy is life !', 32, 'http://www.whisky.fr/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/m/1/m19358_2.jpg', 2, 0),
+(3, 'Whiskay', 'Whiskayqqqqqqqq is love, Whiskaddddddy is life !', 52, 'http://www.whisky.fr/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/m/1/m19358_2.jpg', 2, 1),
+(4, 'Cignord', 'Cignord is love, Cignord is life !', 12, 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsBpKOZWyQVR6Hhz68q4TYRJhOVQMTd4suP_zGpkTOVrpikYyQ-NuK6A', 2, 1);
 
 -- --------------------------------------------------------
 
