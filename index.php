@@ -11,14 +11,14 @@ include_once 'function/autoload.php';
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
-    <title>Whiskey Me Up !</title>
+    <title>Whiskey Me Up</title>
 </head>
 <body>
             <!--Header-->
     <div class="container-fluid">
     <div class="jumbotron">
-        <h1>Whiskey Me Up !</h1> 
-        <p>Welcome to Whiskey Me Up ! we are an ancestral family company who make and sell the best whisky and cigard from all around the world</p> 
+        <h1>Whiskey Me Up</h1> 
+        <p>Welcome to Whiskey Me Up we are an ancestral family company who make and sell the best whisky and cigard from all around the world</p> 
     </div> 
     </div>
             <!--NAVBAR-->
