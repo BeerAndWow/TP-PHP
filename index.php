@@ -14,6 +14,13 @@ include_once 'function/autoload.php';
     <title>Whiskey Me Up !</title>
 </head>
 <body>
+            <!--Header-->
+    <div class="container">
+    <div class="jumbotron">
+        <h1>Whiskey Me Up !</h1> 
+        <p>Welcome to Whiskey Me Up ! we are an ancestral family company who make and sell the best whisky and cigard from all around the world</p> 
+    </div> 
+    </div>
             <!--NAVBAR-->
     <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -51,13 +58,6 @@ include_once 'function/autoload.php';
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
     </nav>
-            <!--Header-->
-    <div class="container">
-    <div class="jumbotron">
-        <h1>Whiskey Me Up !</h1> 
-        <p>Welcome to Whiskey Me Up ! we are an ancestral family company who make and sell the best whisky and cigard from all around the world</p> 
-    </div> 
-    </div>
     <br>
             <!--Slider-->
     <div class="container">

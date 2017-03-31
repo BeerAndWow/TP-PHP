@@ -4,3 +4,17 @@ font-family : 'Marcellus SC', serif;
 body{
     background-image: url("../img/Background_.jpg");
 }
+
+.jumbotron{
+    background-color: transparent;
+    color: white;
+}
+.navbar{
+    background-color: transparent;
+}
+.navbar-default{
+    border: none;
+}
+.nav .navbar-nav > li > a{
+    color:white;
+}
