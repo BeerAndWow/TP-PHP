@@ -103,32 +103,32 @@ include_once 'function/autoload.php';
     <br>
     <div class="container">
         <?php
-/*            foreach ($result as $key => $value) {
-                if($key == 0){
+            foreach (getArticles() as $id => $article) {
+                if($id == 0){
                     echo "<div class='row'>";
-                    echo "<div class='col-md-3'>";
-                    echo "<img src=$value->picture >";
-                    echo "<h3>"."$value->name"."</h3>";
-                    echo "<p>"."$value->price"."</p>";
+                    echo "<div class='col-md-4'>";
+                    echo "<img class='img-responsive' src=".$article->picture." >";
+                    echo "<h3>".$article->name."</h3>";
+                    echo "<p>".$article->price."</p>";
                     echo "</div>";
                 }
-                elseif ($key == 3 || $key == 6) {
+                elseif ($id == 3 || $id == 6) {
                     echo "</div>";
                     echo "<div class='row'>";
-                    echo "<div class='col-md-3'>";
-                    echo "<img src=$value->picture >";
-                    echo "<h3>"."$value->name"."</h3>";
-                    echo "<p>"."$value->price"."</p>";
+                    echo "<div class='col-md-4'>";
+                    echo "<img class='img-responsive' src=".$article->picture." >";
+                    echo "<h3>".$article->name."</h3>";
+                    echo "<p>".$article->price."</p>";
                     echo "</div>";
                 }
                 else{
-                    echo "<div class='col-md-3'>";
-                    echo "<img src=$value->img >";
-                    echo "<h3>"."$value->name"."</h3>";
-                    echo "<p>"."$value->price"."</p>";
+                    echo "<div class='col-md-4'>";
+                    echo "<img class='img-responsive' src=".$article->picture." >";
+                    echo "<h3>".$article->name."</h3>";
+                    echo "<p>".$article->price."</p>";
                     echo "</div>";
                 }
-            }*/
+            }
         ?>
     </div>
 
