@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 31 Mars 2017 à 10:37
+-- Généré le :  Ven 31 Mars 2017 à 12:24
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -33,6 +33,20 @@ CREATE TABLE IF NOT EXISTS `articles` (
   `price` float NOT NULL,
   `picture` text NOT NULL,
   `stock` int(4) NOT NULL,
+  `id_category` int(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `category`
+--
+
+CREATE TABLE IF NOT EXISTS `category` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `whisky` int(1) NOT NULL,
+  `cigard` int(1) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 

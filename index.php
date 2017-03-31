@@ -1,5 +1,6 @@
 <?php
 include_once 'config.php';
+//include_once 'function/autoload.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -57,6 +58,7 @@ include_once 'config.php';
         <p>Welcome to Whiskey Me Up ! we are an ancestral family company who make and sell the best whisky and cigard from all around the world</p> 
     </div> 
     </div>
+    <br>
             <!--Slider-->
     <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -98,7 +100,39 @@ include_once 'config.php';
     </a>
     </div>
     </div>
+    <br>
+    <div class="container">
+        <?php
+/*            foreach ($result as $key => $value) {
+                if($key == 0){
+                    echo "<div class='row'>";
+                    echo "<div class='col-md-3'>";
+                    echo "<img src=$value->picture >";
+                    echo "<h3>"."$value->name"."</h3>";
+                    echo "<p>"."$value->price"."</p>";
+                    echo "</div>";
+                }
+                elseif ($key == 3 || $key == 6) {
+                    echo "</div>";
+                    echo "<div class='row'>";
+                    echo "<div class='col-md-3'>";
+                    echo "<img src=$value->picture >";
+                    echo "<h3>"."$value->name"."</h3>";
+                    echo "<p>"."$value->price"."</p>";
+                    echo "</div>";
+                }
+                else{
+                    echo "<div class='col-md-3'>";
+                    echo "<img src=$value->img >";
+                    echo "<h3>"."$value->name"."</h3>";
+                    echo "<p>"."$value->price"."</p>";
+                    echo "</div>";
+                }
+            }*/
+        ?>
+    </div>
 
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
