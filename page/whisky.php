@@ -1,4 +1,3 @@
-?>
 <?php
 $folder = './../../TP-PHP/';
 include_once $folder.'config.php';

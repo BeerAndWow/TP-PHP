@@ -9,9 +9,10 @@ body{
 .jumbotron{
     background-image: url("../img/banner.jpg");
     background-repeat: no-repeat;
-    height: 500px;
+    height: 600px;
     background-size: cover;
     color: white;
+    padding: 0;
 }
 .navbar{
     background-color: transparent;
