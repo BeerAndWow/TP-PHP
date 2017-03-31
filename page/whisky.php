@@ -1,5 +1,6 @@
+?>
 <?php
-$folder = './../TP-PHP/';
+$folder = './../../TP-PHP/';
 include_once $folder.'config.php';
 include_once $folder.'function/autoload.php';
 ?>
@@ -9,8 +10,8 @@ include_once $folder.'function/autoload.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="<?php echo $folder; ?>css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo $folder; ?>css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
     <title>Whiskey Me Up</title>
 </head>
@@ -31,17 +32,17 @@ include_once $folder.'function/autoload.php';
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php">Whiskey Me Up !</a>
+        <a class="navbar-brand" href="<?php echo $folder; ?>index.php">Whiskey Me Up !</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li><a href="page/whisky.php">Whisky</a></li>
-            <li><a href="page/cigard.php">Cigards</a></li>
+            <li><a href="<?php echo $folder; ?>page/whisky.php">Whisky</a></li>
+            <li><a href="<?php echo $folder; ?>page/cigard.php">Cigards</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="page/register.php">Inscription</a></li>
+            <li><a href="<?php echo $folder; ?>page/register.php">Inscription</a></li>
             <li><a href="#">Connexion</a></li>
             </li>
         </ul>
@@ -49,51 +50,15 @@ include_once $folder.'function/autoload.php';
     </div><!-- /.container-fluid -->
     </nav>
     <br>
-            <!--Slider-->
+    <br>
     <div class="container">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-        <img src="img_chania.jpg" alt="Chania">
-        </div>
-
-        <div class="item">
-        <img src="img_chania2.jpg" alt="Chania">
-        </div>
-
-        <div class="item">
-        <img src="img_flower.jpg" alt="Flower">
-        </div>
-
-        <div class="item">
-        <img src="img_flower2.jpg" alt="Flower">
-        </div>
+        <h2>Nos whisky</h2>
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-    </div>
-    </div>
+    <br>
     <br>
     <div class="container">
         <?php
-            foreach (getArticles() as $id => $article) {
+            foreach (getArticlesCategory(0) as $id => $article) {
                 if($id == 0){
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
