@@ -1,6 +1,6 @@
 <?php
 // Define the "fnclib" path name
-$fncFolder = $app_folder."fnclib/";
+$fncFolder = "/";
 
 // Scan the "fnclib" folder
 $fncFiles = scandir($fncFolder);

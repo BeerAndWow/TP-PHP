@@ -1,6 +1,6 @@
 <?php
 include_once 'config.php';
-//include_once 'function/autoload.php';
+include_once 'function/autoload.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
