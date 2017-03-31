@@ -58,6 +58,7 @@ include_once 'function/autoload.php';
         <p>Welcome to Whiskey Me Up ! we are an ancestral family company who make and sell the best whisky and cigard from all around the world</p> 
     </div> 
     </div>
+    <br>
             <!--Slider-->
     <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -99,6 +100,7 @@ include_once 'function/autoload.php';
     </a>
     </div>
     </div>
+    <br>
     <div class="container">
         <div class="row">
             <div class="col-md-3">
