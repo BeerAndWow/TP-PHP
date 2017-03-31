@@ -30,7 +30,7 @@ include_once 'function/autoload.php';
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a cecho "<h3>".$article->name." ".$article->price."€</h3>";>Whiskey Me Up !</a>
+        <a class="navbar-brand" href="index.php">Whiskey Me Up !</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,6 +49,9 @@ include_once 'function/autoload.php';
     </nav>
     <br>
     <br>
+    <div class="container">
+        <h2>Nos cigards</h2>
+    </div>
     <div class="container">
         <?php
             foreach (getArticlesCategory(1) as $id => $article) {

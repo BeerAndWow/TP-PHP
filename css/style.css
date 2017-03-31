@@ -1,4 +1,4 @@
-h1{
+h1,h2,h3{
 font-family : 'Marcellus SC', serif;
 }
 body{
@@ -28,6 +28,10 @@ body{
 
 #banner{
     padding: 30px;
+}
+h2{
+    color: white;
+    text-align: center;
 }
 h3{
     color:white;

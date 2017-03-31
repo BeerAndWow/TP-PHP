@@ -50,6 +50,11 @@ include_once 'function/autoload.php';
     <br>
     <br>
     <div class="container">
+        <h2>Nos whisky</h2>
+    </div>
+    <br>
+    <br>
+    <div class="container">
         <?php
             foreach (getArticlesCategory(0) as $id => $article) {
                 if($id == 0){
