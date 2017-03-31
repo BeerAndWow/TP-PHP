@@ -40,17 +40,8 @@ include_once 'function/autoload.php';
             <li><a href="#">Cigards</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mon compte <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Mon profil</a></li>            
-                <li><a href="#">Mes commandes</a></li>
-                <li><a href="#">Historique d'achats</a></li>
-                <li><a href="#">Liste de souhaits</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Mon panier</a></li>
-            </ul>
+            <li><a href="#">Inscription</a></li>
+            <li><a href="#">Connexion</a></li>
             </li>
         </ul>
         </div><!-- /.navbar-collapse -->
