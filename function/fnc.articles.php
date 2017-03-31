@@ -26,10 +26,7 @@ function getArticlesCategory($category) {
     $query->bindValue(":idCategory", $category, PDO::PARAM_INT);
     $query->execute();
 
-    $result = $query->fetch(PDO::FETCH_OBJ);
-    $query->closeCursor();
-
-    return $result;
+    return $query->fetchAll(PDO::FETCH_OBJ);
 }
 
 /**
