@@ -29,3 +29,10 @@ body{
 #banner{
     padding: 30px;
 }
+h3{
+    color:white;
+    text-align: center;
+}
+strong{
+    text-align: right;
+}
