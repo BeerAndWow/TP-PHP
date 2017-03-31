@@ -29,3 +29,9 @@ body{
 #banner{
     padding: 30px;
 }
+h3{
+    color:white;
+}
+strong{
+    text-align: right;
+}
