@@ -35,7 +35,7 @@ include_once $folder.'function/autoload.php';
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
             <li><a href="<?php echo $folder; ?>page/whisky.php">Whisky</a></li>
             <li><a href="<?php echo $folder; ?>page/cigard.php">Cigards</a></li>
