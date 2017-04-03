@@ -35,7 +35,7 @@ include_once $folder.'function/autoload.php';
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
         <ul class="nav navbar-nav">
             <li><a href="<?php echo $folder; ?>page/whisky.php">Whisky</a></li>
             <li><a href="<?php echo $folder; ?>page/cigard.php">Cigards</a></li>
@@ -61,7 +61,7 @@ include_once $folder.'function/autoload.php';
                 if($id == 0){
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive thumbnail' src=".$folder.$article->picture." >";
+                    echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
                     echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }
@@ -69,13 +69,13 @@ include_once $folder.'function/autoload.php';
                     echo "</div>";
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive thumbnail' src=".$folder.$article->picture." >";
+                    echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
                     echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }
                 else{
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive thumbnail' src=".$folder.$article->picture." >";
+                    echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
                     echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }

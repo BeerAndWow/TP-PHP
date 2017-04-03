@@ -12,7 +12,6 @@ include_once $folder.'function/autoload.php';
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
-    <link rel="icon" href="img/favicon.png" />
     <title>Whiskey Me Up</title>
 </head>
 <body>
@@ -59,52 +58,36 @@ include_once $folder.'function/autoload.php';
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-        <li data-target="#myCarousel" data-slide-to="5"></li>
-        <li data-target="#myCarousel" data-slide-to="6"></li>
-        <li data-target="#myCarousel" data-slide-to="7"></li>
-        <li data-target="#myCarousel" data-slide-to="8"></li>
-        <li data-target="#myCarousel" data-slide-to="9"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-        <img src="img/slider/Slider1.jpg" alt="slide1">
+        <img src="img_chania.jpg" alt="Chania">
         </div>
 
         <div class="item">
-        <img src="img/slider/Slider2.jpg" alt="slide2">
+        <img src="img_chania2.jpg" alt="Chania">
         </div>
 
         <div class="item">
-        <img src="img/slider/Slider3.jpg" alt="slide3">
+        <img src="img_flower.jpg" alt="Flower">
         </div>
 
         <div class="item">
-        <img src="img/slider/Slider4.jpg" alt="slide4">
-        </div>
-
-        <div class="item">
-        <img src="img/slider/Slider5.jpg" alt="slide5">
-        </div>
-
-        <div class="item">
-        <img src="img/slider/Slider6.jpg" alt="slide6">
-        </div>
-
-        <div class="item">
-        <img src="img/slider/Slider7.jpg" alt="slide7">
-        </div>
-
-        <div class="item">
-        <img src="img/slider/Slider8.jpg" alt="slide8">
-        </div>
-
-        <div class="item">
-        <img src="img/slider/Slider9.jpg" alt="slide9">
+        <img src="img_flower2.jpg" alt="Flower">
         </div>
     </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
     </div>
     </div>
     <br>
@@ -114,23 +97,24 @@ include_once $folder.'function/autoload.php';
                 if($id == 0){
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive thumbnail' src=".$folder.$article->picture." >";
-                    echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
+                    echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
+                    echo "<h3>".$article->name."</h3>";
+                    echo "<p>".$article->price."</p>";
                     echo "</div>";
                 }
                 elseif ($id == 3 || $id == 6 || $id == 9 || $id == 12) {
                     echo "</div>";
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive thumbnail' src=".$folder.$article->picture." >";
+                    echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
                     echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }
                 else{
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive thumbnail' src=".$folder.$article->picture." >";
+                    echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
                     echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
-                    echo "</div>";
+					echo "</div>";
                 }
             }
         ?>

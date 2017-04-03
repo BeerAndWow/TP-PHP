@@ -1,8 +1,9 @@
   <?php
 
-$folder = './../../TP-PHP/';
-include_once $folder.'config.php';
-include_once $folder.'function/autoload.php';
+
+ $folder = './../../TP-PHP/';
+ include_once $folder.'config.php';
+ include_once $folder.'function/autoload.php';
 
 $firstname  = null;
 $lastname   = null;
