@@ -97,7 +97,7 @@ include_once $folder.'function/autoload.php';
                 if($id == 0){
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive thumbnail' src=".$article->picture." >";
+                    echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
                     echo "<h3>".$article->name."</h3>";
                     echo "<p>".$article->price."</p>";
                     echo "</div>";
@@ -106,13 +106,13 @@ include_once $folder.'function/autoload.php';
                     echo "</div>";
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive thumbnail' src=".$article->picture." >";
+                    echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
                     echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }
                 else{
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive thumbnail' src=".$article->picture." >";
+                    echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
                     echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
 					echo "</div>";
                 }

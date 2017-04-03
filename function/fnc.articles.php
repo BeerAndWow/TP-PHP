@@ -7,7 +7,7 @@ function getArticles() {
 
    global $bdd;
 
-   $query = $bdd->prepare("SELECT name, picture, price FROM articles ");
+   $query = $bdd->prepare("SELECT id, name, picture, price FROM articles ");
 
    $query->execute();
 
@@ -66,10 +66,7 @@ function getArticle($id) {
     $query->bindValue(":idArticle", $id, PDO::PARAM_INT);
     $query->execute();
 
-    $result = $query->fetch(PDO::FETCH_OBJ);
-    $query->closeCursor();
-
-    return $result;
+    return $query->fetch(PDO::FETCH_OBJ);
 }
 
 /**
