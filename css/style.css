@@ -26,7 +26,6 @@ body{
 .navbar-default .navbar-brand{
     color: silver;
 }
-
 #banner{
     padding: 0;
 }
@@ -35,7 +34,7 @@ h2{
     text-align: center;
 }
 h3{
-    color:wheat;
+    color:white;
     text-align: center;
 }
 strong{
