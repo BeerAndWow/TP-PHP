@@ -16,7 +16,7 @@ if (!empty($_POST)) {
     // Récupération des données de $_POST
     $email_log      = formatString($_POST['email_log']);
     $password_log   = formatString($_POST['password_log']);
-    $login = getUserEmail($email_log);
+    $login = getUserByEmail($email_log);
 
     // Cryptage du mot de passe
 
@@ -34,7 +34,7 @@ if (!empty($_POST)) {
             "message" => "Vous devez saisir une adresse email valide (user@domain.com)."
         ));
     }
-    elseif (getUserEmail($email_log) === false)
+    elseif (getUserByEmail($email_log) === false)
     {
         array_push($error, array(
             "field" => "email_log",
@@ -55,8 +55,10 @@ if (!empty($_POST)) {
         $firstname   = $login->firstname;
         $lastname   = $login->lastname;
         setFlashbag("Vous ête connecté ".$firstname." ".$lastname." !");
+        $_SESSION["user"] = $login;
+        var_dump($_SESSION["user"]);
 
-        
+
 
     }
 
