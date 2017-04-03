@@ -1,13 +1,18 @@
-h1{
-font-family : 'Marcellus SC', serif;    
+h1,h2,h3{
+font-family : 'Marcellus SC', serif;
 }
 body{
     background-image: url("../img/Background_.jpg");
+    background-attachment: fixed;
 }
 
 .jumbotron{
-    background-color: transparent;
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: cover;
     color: white;
+    padding: 0;
 }
 .navbar{
     background-color: transparent;
@@ -20,4 +25,19 @@ body{
 }
 .navbar-default .navbar-brand{
     color: silver;
+}
+
+#banner{
+    padding: 0;
+}
+h2{
+    color: white;
+    text-align: center;
+}
+h3{
+    color:white;
+    text-align: center;
+}
+strong{
+    text-align: right;
 }

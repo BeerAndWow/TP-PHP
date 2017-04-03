@@ -1,6 +1,7 @@
 <?php
-include_once 'config.php';
-include_once 'function/autoload.php';
+$folder = './../TP-PHP/';
+include_once $folder.'config.php';
+include_once $folder.'function/autoload.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -15,10 +16,8 @@ include_once 'function/autoload.php';
 </head>
 <body>
             <!--Header-->
-    <div class="container-fluid">
-    <div class="jumbotron">
-        <h1>Whiskey Me Up</h1> 
-        <p>Welcome to Whiskey Me Up we are an ancestral family company who make and sell the best whisky and cigard from all around the world</p> 
+    <div class="container-fluid" id="banner">
+    <div class="jumbotron"> 
     </div> 
     </div>
             <!--NAVBAR-->
@@ -32,27 +31,18 @@ include_once 'function/autoload.php';
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Whiskey Me Up !</a>
+        <a class="navbar-brand" href="index.php">Whiskey Me Up !</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li><a href="#">Whisky</a></li>
-            <li><a href="#">Cigards</a></li>
+            <li><a href="page/whisky.php">Whisky</a></li>
+            <li><a href="page/cigard.php">Cigards</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mon compte <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Mon profil</a></li>            
-                <li><a href="#">Mes commandes</a></li>
-                <li><a href="#">Historique d'achats</a></li>
-                <li><a href="#">Liste de souhaits</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Mon panier</a></li>
-            </ul>
+            <li><a href="page/register.php">Inscription</a></li>
+            <li><a href="#">Connexion</a></li>
             </li>
         </ul>
         </div><!-- /.navbar-collapse -->
@@ -161,25 +151,22 @@ include_once 'function/autoload.php';
                 if($id == 0){
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive' src=".$article->picture." >";
-                    echo "<h3>".$article->name."</h3>";
-                    echo "<p>".$article->price."</p>";
+                    echo "<img class='img-responsive thumbnail' src=".$article->picture." >";
+                    echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }
-                elseif ($id == 3 || $id == 6) {
+                elseif ($id == 3 || $id == 6 || $id == 9 || $id == 12) {
                     echo "</div>";
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive' src=".$article->picture." >";
-                    echo "<h3>".$article->name."</h3>";
-                    echo "<p>".$article->price."</p>";
+                    echo "<img class='img-responsive thumbnail' src=".$article->picture." >";
+                    echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }
                 else{
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive' src=".$article->picture." >";
-                    echo "<h3>".$article->name."</h3>";
-                    echo "<p>".$article->price."</p>";
+                    echo "<img class='img-responsive thumbnail' src=".$article->picture." >";
+                    echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }
             }
