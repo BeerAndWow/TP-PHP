@@ -36,9 +36,14 @@
             <li><a href="<?php echo $folder; ?>page/cigard.php">Cigars</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="<?php echo $folder; ?>page/register.php">Register</a></li>
-            <li><a href="<?php echo $folder; ?>page/login.php">Login</a></li>
-            </li>
+            <?php 
+            if (!isset($_SESSION["user"])) {
+            echo "<li><a href=".$folder."page/register.php>Register</a></li>";
+            echo "<li><a href=".$folder."page/login.php>Login</a></li>";
+            }
+            else {
+            echo "<li><a href='#'>".$_SESSION["user"]->lastname." ".$_SESSION["user"]->firstname."</a></li>";
+                } ?>
         </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

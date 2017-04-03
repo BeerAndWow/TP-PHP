@@ -56,9 +56,6 @@ if (!empty($_POST)) {
         $lastname   = $login->lastname;
         setFlashbag("Vous ête connecté ".$firstname." ".$lastname." !");
         $_SESSION["user"] = $login;
-        var_dump($_SESSION["user"]);
-
-
 
     }
 
