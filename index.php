@@ -123,7 +123,6 @@ include_once $folder.'function/autoload.php';
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

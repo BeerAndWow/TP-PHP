@@ -84,9 +84,8 @@ include_once $folder.'function/autoload.php';
     </div>
 
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="<?php echo $folder; ?>js/jquery.min.js"></script>
+    <script src="<?php echo $folder; ?>js/bootstrap.min.js"></script>
+    <script src="<?php echo $folder; ?>js/app.js"></script>
 </body>
 </html>
