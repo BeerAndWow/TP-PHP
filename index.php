@@ -70,39 +70,39 @@ include_once $folder.'function/autoload.php';
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-        <img src="img/slider/Slider1.jpg" alt="Chania">
+        <img src="img/slider/Slider1.jpg" alt="slide1">
         </div>
 
         <div class="item">
-        <img src="img/slider/Slider2.jpg" alt="Flower">
+        <img src="img/slider/Slider2.jpg" alt="slide2">
         </div>
 
         <div class="item">
-        <img src="img/slider/Slider3.jpg" alt="Flower">
+        <img src="img/slider/Slider3.jpg" alt="slide3">
         </div>
 
         <div class="item">
-        <img src="img/slider/Slider4.jpg" alt="Flower">
+        <img src="img/slider/Slider4.jpg" alt="slide4">
         </div>
 
         <div class="item">
-        <img src="img/slider/Slider5.jpg" alt="Flower">
+        <img src="img/slider/Slider5.jpg" alt="slide5">
         </div>
 
         <div class="item">
-        <img src="img/slider/Slider6.jpg" alt="Flower">
+        <img src="img/slider/Slider6.jpg" alt="slide6">
         </div>
 
         <div class="item">
-        <img src="img/slider/Slider7.jpg" alt="Flower">
+        <img src="img/slider/Slider7.jpg" alt="slide7">
         </div>
 
         <div class="item">
-        <img src="img/slider/Slider8.jpg" alt="Flower">
+        <img src="img/slider/Slider8.jpg" alt="slide8">
         </div>
 
         <div class="item">
-        <img src="img/slider/Slider9.jpg" alt="Flower">
+        <img src="img/slider/Slider9.jpg" alt="slide9">
         </div>
     </div>
     </div>
