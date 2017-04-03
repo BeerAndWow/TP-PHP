@@ -1,4 +1,9 @@
   <?php
+
+$folder = './../../TP-PHP/';
+include_once $folder.'config.php';
+include_once $folder.'function/autoload.php';
+
 $firstname  = null;
 $lastname   = null;
 $email      = null;
@@ -49,7 +54,7 @@ if (!empty($_POST)) {
     if (strlen($firstname) < 2) {
         array_push($error, array(
             "field" => "firstname",
-            "message" => "Votre Prénom doit contenir au 2 un caractère."
+            "message" => "Votre Prénom doit contenir au moins 2 un caractère."
         ));
     }
     else if (!preg_match("/[a-z]/i",$firstname)) {
@@ -92,12 +97,11 @@ if (!empty($_POST)) {
     // (?=.*[a-zA-Z])   Au moins 1 caractère alpha dans la chaine
     // (?=.*["@!])  Au moins 1 caractères spéciale
     // {8,}     Au moins 8 caractères
-    else if (!preg_match("/(?=.*\d)(?=.*[a-zA-Z])(?=.*[#@!])[a-zA-Z0-9#@!]{8,}/", $password))
+    else if (!preg_match("/(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9!]{8,}/", $password))
     {
         array_push($error, array(
             "field" => "password",
-            "message" => "Le mot de passe doit contenir au moins 1 caractère numérique (0-1),
-                            un caractère en majuscule, et un caractère spécial (#@!)."
+            "message" => "Le mot de passe doit contenir au moins 1 caractère numérique (0-1)."
         ));
     }
 
@@ -112,7 +116,7 @@ if (!empty($_POST)) {
 
 
     // Controle date de naissance
-    if (!validateDate($birthday)) {
+    if (strlen($birthday) < 8) {
         array_push($error, array(
             "field" => "birthday",
             "message" => "La date de naissance n'est pas valide."
@@ -127,100 +131,141 @@ if (!empty($_POST)) {
 
         // On log l'utilisateur et on le redirige vers sa page profil
         if ($user_id > 0) {
-            setFlashbag("Enregistrement réussi : ".$user_id);
-
-            // Log l'utilisateur
-            setUserSession(array(
-                "id" => $user_id,
-                "firstname" => $firstname,
-                "lastname" => $lastname,
-                "email" => $email
-            ));
+            setFlashbag("Enregistrement réussi : ".$firstname." ".$lastname." !");
 
         }
 
         // Si l'enregistrement à échoué on affiche un message d'erreur
         else {
-             echo "<span class=\"text-danger\">"."L'enregistrement en BD à échoué"."</span>";
+             echo "<span class=\"text-danger\">"."L'enregistrement à échoué"."</span>";
         }
     }
 }
 ?>
-
-<div class="row">
-    <div class="col-md-4 col-md-offset-4">
-
-        <h3>Inscription</h3>
-
-        <form method="POST">
-
-            <div class="form-group">
-                <label for="firstname" class="control-label">Prénom</label>
-                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Prénom" value="<?php echo $firstname; ?>">
-                <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "firstname")."</span>"; ?>
-            </div>
-
-            <div class="form-group">
-                <label for="lastname" class="control-label">Nom</label>
-                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Nom" value="<?php echo $lastname; ?>">
-                <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "lastname")."</span>"; ?>
-            </div>
-
-            <div class="form-group">
-                <label for="email" class="control-label">Email</label>
-                <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="<?php echo $email; ?>">
-                <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "email")."</span>"; ?>
-            </div>
-
-            <div class="form-group">
-                <label for="password" class="control-label">Mot de passe</label>
-                <input type="password" class="form-control" id="password" name="password" placeholder="Mot de passe">
-                <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "password")."</span>"; ?>
-            </div>
-
-            <div class="form-group">
-                <label><input type="radio" name="genre" value="M"> Homme</label>
-                <label><input type="radio" name="genre" value="F"> Femme</label>
-                <?php if (isset($error)) echo "<br><span class=\"text-danger\">".printError($error, "genre")."</span>"; ?>
-            </div>
-
-            <div class="form-group">
-                <label for="birthday_day" class="control-label">Date de naissance</label>
-
-                <div class="row">
-                    <div class="col-sm-4">
-                        <select class="form-control" id="birthday_day" name="birthday['day']">
-                            <option value=""></option>
-                            <?php for ($i=1; $i<=31; $i++) : ?>
-                                <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-                            <?php endfor; ?>
-                        </select>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <select class="form-control" id="birthday_month" name="birthday['month']">
-                            <option value=""></option>
-                            <?php for ($i=1; $i<=12; $i++) : ?>
-                                <option value="<?php echo $i; ?>"><?php echo $label_month[$i-1]; ?></option>
-                            <?php endfor; ?>
-                        </select>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <select class="form-control" id="birthday_year" name="birthday['year']">
-                            <option value=""></option>
-                            <?php for ($i=date("Y"); $i>date("Y")-100; $i--) : ?>
-                                <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-                            <?php endfor; ?>
-                        </select>
-                    </div>
-                </div>
-                <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "birthday")."</span>"; ?>
-
-            </div>
-
-            <button type="submit" class="btn btn-default">Valider</button>
-
-        </form>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="<?php echo $folder; ?>css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo $folder; ?>css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+    <title>Whiskey Me Up</title>
+</head>
+<body>
+            <!--Header-->
+    <div class="container-fluid" id="banner">
+    <div class="jumbotron"> 
+    </div> 
     </div>
-</div>
+            <!--NAVBAR-->
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="<?php echo $folder; ?>index.php">Whiskey Me Up !</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="<?php echo $folder; ?>page/whisky.php">Whisky</a></li>
+            <li><a href="<?php echo $folder; ?>page/cigard.php">Cigards</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="<?php echo $folder; ?>page/register.php">Inscription</a></li>
+            <li><a href="#">Connexion</a></li>
+            </li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+
+            <h3>Inscription</h3>
+
+            <form method="POST">
+
+                <div class="form-group">
+                    <label for="firstname" class="control-label">Prénom</label>
+                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Prénom" value="<?php echo $firstname; ?>">
+                    <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "firstname")."</span>"; ?>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname" class="control-label">Nom</label>
+                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Nom" value="<?php echo $lastname; ?>">
+                    <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "lastname")."</span>"; ?>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="control-label">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="<?php echo $email; ?>">
+                    <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "email")."</span>"; ?>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="control-label">Mot de passe</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Mot de passe">
+                    <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "password")."</span>"; ?>
+                </div>
+
+                <div class="form-group">
+                    <label><input type="radio" name="genre" value="M"> Homme</label>
+                    <label><input type="radio" name="genre" value="F"> Femme</label>
+                    <?php if (isset($error)) echo "<br><span class=\"text-danger\">".printError($error, "genre")."</span>"; ?>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthday_day" class="control-label">Date de naissance</label>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <select class="form-control" id="birthday_day" name="birthday['day']">
+                                <option value=""></option>
+                                <?php for ($i=1; $i<=31; $i++) : ?>
+                                    <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                <?php endfor; ?>
+                            </select>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <select class="form-control" id="birthday_month" name="birthday['month']">
+                                <option value=""></option>
+                                <?php for ($i=1; $i<=12; $i++) : ?>
+                                    <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                <?php endfor; ?>
+                            </select>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <select class="form-control" id="birthday_year" name="birthday['year']">
+                                <option value=""></option>
+                                <?php for ($i=date("Y"); $i>date("Y")-100; $i--) : ?>
+                                    <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                <?php endfor; ?>
+                            </select>
+                        </div>
+                    </div>
+                    <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "birthday")."</span>"; ?>
+
+                </div>
+
+                <button type="submit" class="btn btn-default">Valider</button>
+
+            </form>
+        </div>
+    </div>
+    <script src="<?php echo $folder; ?>js/jquery.min.js"></script>
+    <script src="<?php echo $folder; ?>js/bootstrap.min.js"></script>
+    <script src="<?php echo $folder; ?>js/app.js"></script>
+</body>
+</html>

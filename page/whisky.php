@@ -1,5 +1,5 @@
 <?php
-$folder = './../TP-PHP/';
+$folder = './../../TP-PHP/';
 include_once $folder.'config.php';
 include_once $folder.'function/autoload.php';
 ?>
@@ -9,10 +9,9 @@ include_once $folder.'function/autoload.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="<?php echo $folder; ?>css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo $folder; ?>css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
-    <link rel="icon" href="img/favicon.png" />
     <title>Whiskey Me Up</title>
 </head>
 <body>
@@ -32,17 +31,17 @@ include_once $folder.'function/autoload.php';
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php">Whiskey Me Up !</a>
+        <a class="navbar-brand" href="<?php echo $folder; ?>index.php">Whiskey Me Up !</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li><a href="page/whisky.php">Whisky</a></li>
-            <li><a href="page/cigard.php">Cigards</a></li>
+            <li><a href="<?php echo $folder; ?>page/whisky.php">Whisky</a></li>
+            <li><a href="<?php echo $folder; ?>page/cigard.php">Cigards</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="page/register.php">Inscription</a></li>
+            <li><a href="<?php echo $folder; ?>page/register.php">Inscription</a></li>
             <li><a href="#">Connexion</a></li>
             </li>
         </ul>
@@ -50,67 +49,15 @@ include_once $folder.'function/autoload.php';
     </div><!-- /.container-fluid -->
     </nav>
     <br>
-            <!--Slider-->
+    <br>
     <div class="container">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-        <li data-target="#myCarousel" data-slide-to="5"></li>
-        <li data-target="#myCarousel" data-slide-to="6"></li>
-        <li data-target="#myCarousel" data-slide-to="7"></li>
-        <li data-target="#myCarousel" data-slide-to="8"></li>
-        <li data-target="#myCarousel" data-slide-to="9"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-        <img src="img/slider/Slider1.jpg" alt="slide1">
-        </div>
-
-        <div class="item">
-        <img src="img/slider/Slider2.jpg" alt="slide2">
-        </div>
-
-        <div class="item">
-        <img src="img/slider/Slider3.jpg" alt="slide3">
-        </div>
-
-        <div class="item">
-        <img src="img/slider/Slider4.jpg" alt="slide4">
-        </div>
-
-        <div class="item">
-        <img src="img/slider/Slider5.jpg" alt="slide5">
-        </div>
-
-        <div class="item">
-        <img src="img/slider/Slider6.jpg" alt="slide6">
-        </div>
-
-        <div class="item">
-        <img src="img/slider/Slider7.jpg" alt="slide7">
-        </div>
-
-        <div class="item">
-        <img src="img/slider/Slider8.jpg" alt="slide8">
-        </div>
-
-        <div class="item">
-        <img src="img/slider/Slider9.jpg" alt="slide9">
-        </div>
+        <h2>Nos whisky</h2>
     </div>
-    </div>
-    </div>
+    <br>
     <br>
     <div class="container">
         <?php
-            foreach (getArticles() as $id => $article) {
+            foreach (getArticlesCategory(0) as $id => $article) {
                 if($id == 0){
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
@@ -135,10 +82,10 @@ include_once $folder.'function/autoload.php';
             }
         ?>
     </div>
-<!-- test -->
+
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="<?php echo $folder; ?>js/jquery.min.js"></script>
+    <script src="<?php echo $folder; ?>js/bootstrap.min.js"></script>
+    <script src="<?php echo $folder; ?>js/app.js"></script>
 </body>
 </html>

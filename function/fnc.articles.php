@@ -3,13 +3,13 @@
 /**
  * Récupération de tout les articles avec un ORDER en parametre
  */
-function getArticles($orderBy="ASC") {
+function getArticles() {
 
    global $bdd;
 
-   $query = $bdd->prepare("SELECT id, name, content, picture, price, stock FROM articles ORDER BY name $orderBy");
+   $query = $bdd->prepare("SELECT name, picture, price FROM articles ");
 
-    $query->execute();
+   $query->execute();
 
    return $query->fetchAll(PDO::FETCH_OBJ);
 }
@@ -26,10 +26,7 @@ function getArticlesCategory($category) {
     $query->bindValue(":idCategory", $category, PDO::PARAM_INT);
     $query->execute();
 
-    $result = $query->fetch(PDO::FETCH_OBJ);
-    $query->closeCursor();
-
-    return $result;
+    return $query->fetchAll(PDO::FETCH_OBJ);
 }
 
 /**
