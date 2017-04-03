@@ -110,7 +110,7 @@ include_once $folder.'function/autoload.php';
     <br>
     <div class="container">
         <?php
-            foreach (getArticlesCategory(1) as $id => $article) {
+            foreach (getArticles() as $id => $article) {
                 if($id == 0){
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
