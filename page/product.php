@@ -2,6 +2,7 @@
 $folder = './../../TP-PHP/';
 include_once $folder.'config.php';
 include_once $folder.'function/autoload.php';
+$article = getArticle($_GET["article"]);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -51,18 +52,16 @@ include_once $folder.'function/autoload.php';
     <br>
     <br>
     <div class="container">
-        <h2><?php echo $_GET["name"] ?></h2>
+        <h2><strong><?php echo $article->name ?></strong></h2>
     </div>
     <br>
     <br>
     <div class="container">
         <?php
-        var_dump($_GET);
-            $article = getArticle($_GET["article"]);
 
             echo "<div class='row'>";
             echo "<div class='col-md-6 col-md-offset-3'>";
-            echo "<a href=".$folder."page/product.php?article=".$article->id."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
+            echo "<img class='img-responsive thumbnail' src=".$folder.$article->picture." >";
             echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
             echo "</div>";
 
