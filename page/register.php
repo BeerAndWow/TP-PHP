@@ -1,4 +1,9 @@
   <?php
+
+$folder = './../../TP-PHP/';
+include_once $folder.'config.php';
+include_once $folder.'function/autoload.php';
+
 $firstname  = null;
 $lastname   = null;
 $email      = null;
@@ -49,7 +54,7 @@ if (!empty($_POST)) {
     if (strlen($firstname) < 2) {
         array_push($error, array(
             "field" => "firstname",
-            "message" => "Votre Prénom doit contenir au 2 un caractère."
+            "message" => "Votre Prénom doit contenir au moins 2 un caractère."
         ));
     }
     else if (!preg_match("/[a-z]/i",$firstname)) {
@@ -92,12 +97,11 @@ if (!empty($_POST)) {
     // (?=.*[a-zA-Z])   Au moins 1 caractère alpha dans la chaine
     // (?=.*["@!])  Au moins 1 caractères spéciale
     // {8,}     Au moins 8 caractères
-    else if (!preg_match("/(?=.*\d)(?=.*[a-zA-Z])(?=.*[#@!])[a-zA-Z0-9#@!]{8,}/", $password))
+    else if (!preg_match("/(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9!]{8,}/", $password))
     {
         array_push($error, array(
             "field" => "password",
-            "message" => "Le mot de passe doit contenir au moins 1 caractère numérique (0-1),
-                            un caractère en majuscule, et un caractère spécial (#@!)."
+            "message" => "Le mot de passe doit contenir au moins 1 caractère numérique (0-1)."
         ));
     }
 
@@ -112,7 +116,7 @@ if (!empty($_POST)) {
 
 
     // Controle date de naissance
-    if (!validateDate($birthday)) {
+    if (strlen($birthday) < 8) {
         array_push($error, array(
             "field" => "birthday",
             "message" => "La date de naissance n'est pas valide."
@@ -127,29 +131,16 @@ if (!empty($_POST)) {
 
         // On log l'utilisateur et on le redirige vers sa page profil
         if ($user_id > 0) {
-            setFlashbag("Enregistrement réussi : ".$user_id);
-
-            // Log l'utilisateur
-            setUserSession(array(
-                "id" => $user_id,
-                "firstname" => $firstname,
-                "lastname" => $lastname,
-                "email" => $email
-            ));
+            setFlashbag("Enregistrement réussi : ".$firstname." ".$lastname." !");
 
         }
 
         // Si l'enregistrement à échoué on affiche un message d'erreur
         else {
-             echo "<span class=\"text-danger\">"."L'enregistrement en BD à échoué"."</span>";
+             echo "<span class=\"text-danger\">"."L'enregistrement à échoué"."</span>";
         }
     }
 }
-?>
-<?php
-$folder = './../../TP-PHP/';
-include_once $folder.'config.php';
-include_once $folder.'function/autoload.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -275,7 +266,6 @@ include_once $folder.'function/autoload.php';
     </div>
     <script src="<?php echo $folder; ?>js/jquery.min.js"></script>
     <script src="<?php echo $folder; ?>js/bootstrap.min.js"></script>
-    <script src="<?php echo $folder; ?>js/jquery.validate.min.js"></script>
     <script src="<?php echo $folder; ?>js/app.js"></script>
 </body>
 </html>
