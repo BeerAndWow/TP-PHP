@@ -190,7 +190,25 @@ include_once $folder.'function/autoload.php';
         </div>
     </div>
     </div>
-<!-- test -->
+    <!-- test -->
+    <div class="container-fluid">
+        <h2>Our Partners</h2>
+        </br>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="img/logos/logo1.png" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-3">
+               <img src="img/logos/logo2.png" class="img-responsive" alt=""> 
+            </div>
+            <div class="col-md-3">
+                <img src="img/logos/logo5.png" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-3">
+                <img src="img/logos/logo4.png" class="img-responsive" alt="">
+            </div>
+        </div>
+    </div>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
