@@ -58,6 +58,10 @@ $article = getArticle($_GET["article"]);
     <br>
     <div class="container">
         <?php
+<<<<<<< HEAD
+=======
+            $article = getArticle($_GET["article"]);
+>>>>>>> origin/master
 
             echo "<div class='row'>";
             echo "<div class='col-md-6 col-md-offset-3'>";
