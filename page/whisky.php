@@ -53,8 +53,15 @@ include_once $folder.'function/autoload.php';
     <div class="container">
         <h2>Nos whisky</h2>
     </div>
-    <br>
-    <br>
+     <div class="container">
+        <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <br>
+            <img src="../img/separator.png" class="img-responsive" alt="separator">
+            <br>
+        </div>
+    </div>
+    </div>
     <div class="container">
         <?php
             foreach (getArticlesCategory(0) as $id => $article) {
@@ -83,6 +90,15 @@ include_once $folder.'function/autoload.php';
         ?>
     </div>
 
+    </div>
+     <div class="container">
+        <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <br>
+            <img src="../img/separator.png" class="img-responsive" alt="separator">
+            <br>
+        </div>
+    </div>
     </div>
     <script src="<?php echo $folder; ?>js/jquery.min.js"></script>
     <script src="<?php echo $folder; ?>js/bootstrap.min.js"></script>
