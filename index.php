@@ -107,15 +107,25 @@ include_once $folder.'function/autoload.php';
     </div>
     </div>
     <br>
+    <h3>Nos meilleures ventes</h3>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <br>
+            <img src="img/separator.png" class="img-responsive" alt="separator">
+            <br>
+        </div>
+    </div>
+    </div>
+
     <div class="container">
         <?php
-            foreach (getArticles() as $id => $article) {
+            foreach (getArticlesCategory(0) as $id => $article) {
                 if($id == 0){
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
                     echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
-                    echo "<h3>".$article->name."</h3>";
-                    echo "<p>".$article->price."</p>";
+                    echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }
                 elseif ($id == 3 || $id == 6 || $id == 9 || $id == 12) {
@@ -130,10 +140,55 @@ include_once $folder.'function/autoload.php';
                     echo "<div class='col-md-4'>";
                     echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
                     echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
-					echo "</div>";
+                    echo "</div>";
                 }
             }
         ?>
+    </div>
+     <div class="container">
+        <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <br>
+            <img src="img/separator.png" class="img-responsive" alt="separator">
+            <br>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <?php
+            foreach (getArticlesCategory(1) as $id => $article) {
+                if($id == 0){
+                    echo "<div class='row'>";
+                    echo "<div class='col-md-4'>";
+                    echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
+                    echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
+                    echo "</div>";
+                }
+                elseif ($id == 3 || $id == 6 || $id == 9 || $id == 12) {
+                    echo "</div>";
+                    echo "<div class='row'>";
+                    echo "<div class='col-md-4'>";
+                    echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
+                    echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
+                    echo "</div>";
+                }
+                else{
+                    echo "<div class='col-md-4'>";
+                    echo "<a href=".$folder."page/product.php?article=".$article->id."&name=".$article->name."><img class='img-responsive thumbnail' src=".$folder.$article->picture." ></a>";
+                    echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
+                    echo "</div>";
+                }
+            }
+        ?>
+    </div>
+     <div class="container">
+        <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <br>
+            <img src="img/separator.png" class="img-responsive" alt="separator">
+            <br>
+        </div>
+    </div>
     </div>
 <!-- test -->
     </div>

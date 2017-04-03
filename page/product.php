@@ -57,7 +57,6 @@ include_once $folder.'function/autoload.php';
     <br>
     <div class="container">
         <?php
-        var_dump($_GET);
             $article = getArticle($_GET["article"]);
 
             echo "<div class='row'>";
