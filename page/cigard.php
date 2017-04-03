@@ -59,7 +59,7 @@ include_once $folder.'function/autoload.php';
                 if($id == 0){
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive thumbnail' src=".$article->picture." >";
+                    echo "<img class='img-responsive thumbnail' src=".$folder.$article->picture." >";
                     echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }
@@ -67,13 +67,13 @@ include_once $folder.'function/autoload.php';
                     echo "</div>";
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive thumbnail' src=".$article->picture." >";
+                    echo "<img class='img-responsive thumbnail' src=".$folder.$article->picture." >";
                     echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }
                 else{
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive thumbnail' src=".$article->picture." >";
+                    echo "<img class='img-responsive thumbnail' src=".$folder.$article->picture." >";
                     echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }

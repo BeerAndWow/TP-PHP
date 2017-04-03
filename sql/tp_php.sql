@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 31 Mars 2017 à 17:26
+-- Généré le :  Lun 03 Avril 2017 à 09:48
 -- Version du serveur :  10.1.19-MariaDB
 -- Version de PHP :  7.0.13
 
@@ -41,16 +41,16 @@ CREATE TABLE `articles` (
 --
 
 INSERT INTO `articles` (`id`, `name`, `content`, `price`, `picture`, `stock`, `id_category`) VALUES
-(1, 'The first édition', 'Whiskay is love, Whiskay is life !', 42, '../img/articles/article1.jpg', 2, 0),
-(2, 'Auchentochan', 'Whiskay qsdis love, Whiskagrgrgdgrgy is life !', 32, '../img/articles/article2.jpg', 2, 0),
-(3, 'The BenRiach', 'Whiskayqqqqqqqq is love, Whiskaddddddy is life !', 52, '../img/articles/article5.jpg', 2, 0),
+(1, 'The first édition', 'Whiskay is love, Whiskay is life !', 42, 'img/articles/article1.jpg', 2, 0),
+(2, 'Auchentochan', 'Whiskay qsdis love, Whiskagrgrgdgrgy is life !', 32, 'img/articles/article2.jpg', 2, 0),
+(3, 'The BenRiach', 'Whiskayqqqqqqqq is love, Whiskaddddddy is life !', 52, 'img/articles/article5.jpg', 2, 0),
 (4, 'Cigard', 'Cignord is love, Cignord is life !', 12, 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsBpKOZWyQVR6Hhz68q4TYRJhOVQMTd4suP_zGpkTOVrpikYyQ-NuK6A', 2, 1),
-(5, 'Glenfarclas', '', 86, '../img/articles/article7.jpg', 3, 0),
-(6, 'Glenfiddich 18 ans', '', 86, '../img/articles/article9.jpg', 3, 0),
-(7, 'Glenfiddich', '', 86, '../img/articles/article10.jpg', 3, 0),
-(8, 'IPA Experiment', '', 86, '../img/articles/article11.jpg', 3, 0),
-(9, 'Nikka', '', 86, '../img/articles/article13.jpg', 3, 0),
-(10, 'Penderyn', '', 86, '../img/articles/article16.jpg', 3, 0);
+(5, 'Glenfarclas', '', 86, 'img/articles/article7.jpg', 3, 0),
+(6, 'Glenfiddich 18 ans', '', 86, 'img/articles/article9.jpg', 3, 0),
+(7, 'Glenfiddich', '', 86, 'img/articles/article10.jpg', 3, 0),
+(8, 'IPA Experiment', '', 86, 'img/articles/article11.jpg', 3, 0),
+(9, 'Nikka', '', 86, 'img/articles/article13.jpg', 3, 0),
+(10, 'Penderyn', '', 86, 'img/articles/article16.jpg', 3, 0);
 
 -- --------------------------------------------------------
 
