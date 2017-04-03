@@ -41,3 +41,10 @@ h3{
 strong{
     text-align: right;
 }
+label{
+    color: white;
+}
+.row{
+    margin-right:0;
+    margin-left:0;
+}

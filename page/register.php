@@ -149,8 +149,8 @@ if (!empty($_POST)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="<?php echo $folder; ?>css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo $folder; ?>css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
     <title>Whiskey Me Up</title>
 </head>
@@ -196,13 +196,13 @@ if (!empty($_POST)) {
             <form method="POST">
 
                 <div class="form-group">
-                    <label for="firstname" class="control-label">Prénom</label>
+                    <label for="firstname" class="control-label" >Prénom</label>
                     <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Prénom" value="<?php echo $firstname; ?>">
                     <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "firstname")."</span>"; ?>
                 </div>
 
                 <div class="form-group">
-                    <label for="lastname" class="control-label">Nom</label>
+                    <label for="lastname" class="control-label" >Nom</label>
                     <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Nom" value="<?php echo $lastname; ?>">
                     <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "lastname")."</span>"; ?>
                 </div>
@@ -220,8 +220,8 @@ if (!empty($_POST)) {
                 </div>
 
                 <div class="form-group">
-                    <label><input type="radio" name="genre" value="M"> Homme</label>
-                    <label><input type="radio" name="genre" value="F"> Femme</label>
+                    <label ><input type="radio" name="genre" value="M"> Homme</label>
+                    <label ><input type="radio" name="genre" value="F"> Femme</label>
                     <?php if (isset($error)) echo "<br><span class=\"text-danger\">".printError($error, "genre")."</span>"; ?>
                 </div>
 
