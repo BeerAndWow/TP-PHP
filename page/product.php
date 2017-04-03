@@ -61,9 +61,12 @@ $article = getArticle($_GET["article"]);
             $article = getArticle($_GET["article"]);
 
             echo "<div class='row'>";
-            echo "<div class='col-md-6 col-md-offset-3'>";
+            echo "<div class='col-md-6'>";
             echo "<img class='img-responsive thumbnail' src=".$folder.$article->picture." >";
-            echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
+            echo "</div>";
+            echo "<div class='col-md-6'>";
+            echo "<h3>".$article->content." "."</h3>";
+            echo "<br>"."<h3>"."Pick one for only : "."<strong>".$article->price." €</strong>"."</h3>";
             echo "</div>";
 
             
