@@ -54,6 +54,21 @@ function getUser($id) {
 }
 
 /**
+ * Récupération d'un utilisateur celon l'id
+ */
+function getUserEmail($email) {
+
+    global $bdd;
+
+    $query = $bdd->prepare("SELECT id, firstname, lastname, email, password FROM users WHERE email=:email");
+
+    $query->bindValue(":email", $email, PDO::PARAM_INT);
+    $query->execute();
+
+    return $query->fetch(PDO::FETCH_OBJ);
+}
+
+/**
  * Récupération d'un utilisateur celon l'email
  */
 function getUserByEmail($email) {
