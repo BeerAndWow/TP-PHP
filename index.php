@@ -114,24 +114,23 @@ include_once $folder.'function/autoload.php';
                 if($id == 0){
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive thumbnail' src=".$article->picture." >";
-                    echo "<h3>".$article->name."</h3>";
-                    echo "<p>".$article->price."</p>";
+                    echo "<img class='img-responsive thumbnail' src=".$folder.$article->picture." >";
+                    echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }
                 elseif ($id == 3 || $id == 6 || $id == 9 || $id == 12) {
                     echo "</div>";
                     echo "<div class='row'>";
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive thumbnail' src=".$article->picture." >";
+                    echo "<img class='img-responsive thumbnail' src=".$folder.$article->picture." >";
                     echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
                     echo "</div>";
                 }
                 else{
                     echo "<div class='col-md-4'>";
-                    echo "<img class='img-responsive thumbnail' src=".$article->picture." >";
+                    echo "<img class='img-responsive thumbnail' src=".$folder.$article->picture." >";
                     echo "<h3>".$article->name." "."<strong>".$article->price." €</strong>"."</h3>";
-					echo "</div>";
+                    echo "</div>";
                 }
             }
         ?>
