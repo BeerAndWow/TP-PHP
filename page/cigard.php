@@ -31,18 +31,18 @@ include_once $folder.'function/autoload.php';
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="<?php echo $folder; ?>index.php">Whiskey Me Up !</a>
+        <a class="navbar-brand" href="<?php echo $folder; ?>index.php">Whiskey Me Up</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
             <li><a href="<?php echo $folder; ?>page/whisky.php">Whisky</a></li>
-            <li><a href="<?php echo $folder; ?>page/cigard.php">Cigards</a></li>
+            <li><a href="<?php echo $folder; ?>page/cigard.php">Cigars</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="<?php echo $folder; ?>page/register.php">Inscription</a></li>
-            <li><a href="#">Connexion</a></li>
+            <li><a href="<?php echo $folder; ?>page/register.php">Register</a></li>
+            <li><a href="#">Login</a></li>
             </li>
         </ul>
         </div><!-- /.navbar-collapse -->
@@ -51,7 +51,7 @@ include_once $folder.'function/autoload.php';
     <br>
     <br>
     <div class="container">
-        <h2>Nos cigards</h2>
+        <h2>Our cigars</h2>
     </div>
      <div class="container">
         <div class="row">
