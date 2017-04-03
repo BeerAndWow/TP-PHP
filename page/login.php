@@ -56,6 +56,8 @@ if (!empty($_POST)) {
         $lastname   = $login->lastname;
         setFlashbag("Vous ête connecté ".$firstname." ".$lastname." !");
         $_SESSION["user"] = $login;
+        header("location:".$folder."index.php");
+        
 
     }
 

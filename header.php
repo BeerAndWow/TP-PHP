@@ -43,6 +43,7 @@
             }
             else {
             echo "<li><a href='#'>".$_SESSION["user"]->lastname." ".$_SESSION["user"]->firstname."</a></li>";
+            echo "<li><a href=".$folder."logout.php".">Logout</a></li>";
                 } ?>
         </ul>
         </div><!-- /.navbar-collapse -->
