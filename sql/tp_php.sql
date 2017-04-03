@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Lun 03 Avril 2017 à 11:47
+-- Généré le :  Lun 03 Avril 2017 à 11:53
 -- Version du serveur :  10.1.19-MariaDB
 -- Version de PHP :  7.0.13
 
@@ -41,15 +41,15 @@ CREATE TABLE `articles` (
 --
 
 INSERT INTO `articles` (`id`, `name`, `content`, `price`, `picture`, `stock`, `id_category`) VALUES
-(1, 'The first édition', 'Whiskay is love, Whiskay is life !', 42, 'img/articles/article1.jpg', 2, 0),
-(2, 'Auchentochan', 'Whiskay qsdis love, Whiskagrgrgdgrgy is life !', 32, 'img/articles/article2.jpg', 2, 0),
-(3, 'The BenRiach', 'Whiskayqqqqqqqq is love, Whiskaddddddy is life !', 52, 'img/articles/article5.jpg', 2, 0),
-(5, 'Glenfarclas', '', 86, 'img/articles/article7.jpg', 3, 0),
-(6, 'Glenfiddich 18 ans', '', 86, 'img/articles/article9.jpg', 3, 0),
-(7, 'Glenfiddich', '', 86, 'img/articles/article10.jpg', 3, 0),
-(8, 'IPA Experiment', '', 86, 'img/articles/article11.jpg', 3, 0),
-(9, 'Nikka', '', 86, 'img/articles/article13.jpg', 3, 0),
-(10, 'Penderyn', '', 86, 'img/articles/article16.jpg', 3, 0),
+(1, 'The first édition', 'Whiskay is love, Whiskay is life !', 42, 'img/whisky/article1.jpg', 2, 0),
+(2, 'Auchentochan', 'Whiskay qsdis love, Whiskagrgrgdgrgy is life !', 32, 'img/whisky/article2.jpg', 2, 0),
+(3, 'The BenRiach', 'Whiskayqqqqqqqq is love, Whiskaddddddy is life !', 52, 'img/whisky/article5.jpg', 2, 0),
+(5, 'Glenfarclas', '', 86, 'img/whisky/article7.jpg', 3, 0),
+(6, 'Glenfiddich 18 ans', '', 86, 'img/whisky/article9.jpg', 3, 0),
+(7, 'Glenfiddich', '', 86, 'img/whisky/article10.jpg', 3, 0),
+(8, 'IPA Experiment', '', 86, 'img/whisky/article11.jpg', 3, 0),
+(9, 'Nikka', '', 86, 'img/whisky/article13.jpg', 3, 0),
+(10, 'Penderyn', '', 86, 'img/whisky/article16.jpg', 3, 0),
 (11, 'cigard', 'azeazeeazeaeaeaeeazea', 9, 'img/cigar/cigar2.jpg', 20, 1),
 (12, 'cigard', 'azeazeeazeaeaeaeeazea', 9, 'img/cigar/cigar3.jpg', 18, 1),
 (13, 'cigard', 'azeazeeazeaeaeaeeazea', 9, 'img/cigar/cigar4.jpg', 27, 1),
