@@ -12,6 +12,7 @@ include_once $folder.'function/autoload.php';
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" />
     <title>Whiskey Me Up</title>
 </head>
 <body>
@@ -58,6 +59,12 @@ include_once $folder.'function/autoload.php';
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
+        <li data-target="#myCarousel" data-slide-to="8"></li>
+        <li data-target="#myCarousel" data-slide-to="9"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -72,6 +79,30 @@ include_once $folder.'function/autoload.php';
 
         <div class="item">
         <img src="img_flower.jpg" alt="Flower">
+        </div>
+
+        <div class="item">
+        <img src="img_flower2.jpg" alt="Flower">
+        </div>
+
+        <div class="item">
+        <img src="img_flower2.jpg" alt="Flower">
+        </div>
+
+        <div class="item">
+        <img src="img_flower2.jpg" alt="Flower">
+        </div>
+
+        <div class="item">
+        <img src="img_flower2.jpg" alt="Flower">
+        </div>
+
+        <div class="item">
+        <img src="img_flower2.jpg" alt="Flower">
+        </div>
+
+        <div class="item">
+        <img src="img_flower2.jpg" alt="Flower">
         </div>
 
         <div class="item">
