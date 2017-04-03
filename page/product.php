@@ -43,7 +43,7 @@ $article = getArticle($_GET["article"]);
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="<?php echo $folder; ?>page/register.php">Register</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="<?php echo $folder; ?>page/login.php">Login</a></li>
             </li>
         </ul>
         </div><!-- /.navbar-collapse -->

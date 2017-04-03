@@ -69,8 +69,8 @@ if (!empty($_POST)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="<?php echo $folder; ?>css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo $folder; ?>css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
     <title>Whiskey Me Up</title>
 </head>
@@ -98,11 +98,11 @@ if (!empty($_POST)) {
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
             <li><a href="<?php echo $folder; ?>page/whisky.php">Whisky</a></li>
-            <li><a href="<?php echo $folder; ?>page/cigard.php">Cigards</a></li>
+            <li><a href="<?php echo $folder; ?>page/cigard.php">Cigars</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="<?php echo $folder; ?>page/register.php">Inscription</a></li>
-            <li><a href="<?php echo $folder; ?>page/login.php">Connexion</a></li>
+            <li><a href="<?php echo $folder; ?>page/register.php">Register</a></li>
+            <li><a href="<?php echo $folder; ?>page/login.php">Login</a></li>
             </li>
         </ul>
         </div><!-- /.navbar-collapse -->
@@ -111,7 +111,7 @@ if (!empty($_POST)) {
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
 
-            <h3>Connexion</h3>
+            <h3>Login</h3>
 
             <form method="POST">
 
@@ -122,7 +122,7 @@ if (!empty($_POST)) {
                 </div>
 
                 <div class="form-group">
-                    <label for="password" class="control-label">Mot de passe</label>
+                    <label for="password" class="control-label">Password</label>
                     <input type="password" class="form-control" id="password" name="password_log" placeholder="Mot de passe">
                     <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "password_log")."</span>"; ?>
                 </div>

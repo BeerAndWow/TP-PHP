@@ -42,7 +42,7 @@ include_once $folder.'function/autoload.php';
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="page/register.php">Register</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="page/login.php">Login</a></li>
             </li>
         </ul>
         </div><!-- /.navbar-collapse -->

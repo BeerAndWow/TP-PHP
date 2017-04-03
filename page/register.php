@@ -182,7 +182,7 @@ if (!empty($_POST)) {
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="<?php echo $folder; ?>page/register.php">Register</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="<?php echo $folder; ?>page/login.php">Login</a></li>
             </li>
         </ul>
         </div><!-- /.navbar-collapse -->
@@ -191,19 +191,19 @@ if (!empty($_POST)) {
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
 
-            <h3>Inscription</h3>
+            <h3>Register</h3>
 
             <form method="POST">
 
                 <div class="form-group">
-                    <label for="firstname" class="control-label" >Prénom</label>
-                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Prénom" value="<?php echo $firstname; ?>">
+                    <label for="firstname" class="control-label" >Firstname</label>
+                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Firstname" value="<?php echo $firstname; ?>">
                     <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "firstname")."</span>"; ?>
                 </div>
 
                 <div class="form-group">
-                    <label for="lastname" class="control-label" >Nom</label>
-                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Nom" value="<?php echo $lastname; ?>">
+                    <label for="lastname" class="control-label" >Lastname</label>
+                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Lastname" value="<?php echo $lastname; ?>">
                     <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "lastname")."</span>"; ?>
                 </div>
 
@@ -214,19 +214,19 @@ if (!empty($_POST)) {
                 </div>
 
                 <div class="form-group">
-                    <label for="password" class="control-label">Mot de passe</label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="Mot de passe">
+                    <label for="password" class="control-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                     <?php if (isset($error)) echo "<span class=\"text-danger\">".printError($error, "password")."</span>"; ?>
                 </div>
 
                 <div class="form-group">
-                    <label ><input type="radio" name="genre" value="M"> Homme</label>
-                    <label ><input type="radio" name="genre" value="F"> Femme</label>
+                    <label ><input type="radio" name="genre" value="M"> Man</label>
+                    <label ><input type="radio" name="genre" value="F"> Women</label>
                     <?php if (isset($error)) echo "<br><span class=\"text-danger\">".printError($error, "genre")."</span>"; ?>
                 </div>
 
                 <div class="form-group">
-                    <label for="birthday_day" class="control-label">Date de naissance</label>
+                    <label for="birthday_day" class="control-label">Birthday</label>
 
                     <div class="row">
                         <div class="col-sm-4">
@@ -260,7 +260,7 @@ if (!empty($_POST)) {
 
                 </div>
 
-                <button type="submit" class="btn btn-default">Valider</button>
+                <button type="submit" class="btn btn-default">Submit</button>
 
             </form>
         </div>
