@@ -52,7 +52,16 @@ $article = getArticle($_GET["article"]);
     <br>
     <br>
     <div class="container">
-        <h2><strong><?php echo $article->name ?></strong></h2>
+        <h2 class="col-md-3 col-md-offset-1"><strong><?php echo $article->name ?></strong></h2>
+        <div class="container">
+        <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <br>
+            <img src="../img/separator.png" class="img-responsive" alt="separator">
+            <br>
+        </div>
+    </div>
+    </div>
     </div>
     <br>
     <br>
