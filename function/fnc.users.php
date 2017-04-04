@@ -47,10 +47,7 @@ function getUser($id) {
     $query->bindValue(":idUser", $id, PDO::PARAM_INT);
     $query->execute();
 
-    $result = $query->fetch(PDO::FETCH_OBJ);
-    $query->closeCursor();
-
-    return $result;
+    return $query->fetch(PDO::FETCH_OBJ);
 }
 
 /**
@@ -60,15 +57,12 @@ function getUserByEmail($email) {
 
    global $bdd;
 
-   $query = $bdd->prepare("SELECT id, firstname, lastname, password, role FROM users WHERE email=:emailUser");
+   $query = $bdd->prepare("SELECT * FROM users WHERE email=:emailUser");
 
    $query->bindValue(":emailUser", $email, PDO::PARAM_STR);
    $query->execute();
 
-   $result = $query->fetch(PDO::FETCH_OBJ);
-   $query->closeCursor();
-
-   return $result;
+   return $query->fetch(PDO::FETCH_OBJ);
 }
 
 /**
