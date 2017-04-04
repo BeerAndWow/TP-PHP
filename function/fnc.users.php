@@ -42,7 +42,7 @@ function getUser($id) {
 
     global $bdd;
 
-    $query = $bdd->prepare("SELECT id, firstname, lastname, email, password FROM users WHERE id=:idUser");
+    $query = $bdd->prepare("SELECT * FROM users WHERE id=:idUser");
 
     $query->bindValue(":idUser", $id, PDO::PARAM_INT);
     $query->execute();

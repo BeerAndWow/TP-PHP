@@ -40,8 +40,10 @@
             if (!isset($_SESSION["user"])) {
             echo "<li><a href=".$folder."page/register.php>Register</a></li>";
             echo "<li><a href=".$folder."page/login.php>Login</a></li>";
+
             }
             else {
+            echo "<li><a href=".$folder."page/admin.php>Admin panel</a></li>";
             echo "<li><a href='#'>".$_SESSION["user"]->lastname." ".$_SESSION["user"]->firstname."</a></li>";
             echo "<li><a href=".$folder."page/logout.php".">Logout</a></li>";
                 } ?>
