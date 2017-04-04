@@ -1,13 +1,13 @@
 <?php
-session_start();
-
-if (($_SESSION['user'] == null || $_SESSION['user']->role == 0)) {
-    header('location: ../index.php');
-}
 $folder = './../../TP-PHP/';
 include_once $folder.'config.php';
 include_once $folder.'function/autoload.php';
 include_once $folder.'header.php';
+
+if (($_SESSION['user'] == null || $_SESSION['user']->role == 0)) {
+    header('location: ../index.php');
+}
+
 ?>
 
 <div class="col-md-4 col-md-offset-4">
