@@ -43,7 +43,9 @@
 
             }
             else {
-            echo "<li><a href=".$folder."page/admin.php>Admin panel</a></li>";
+                if ($_SESSION["user"]->role == 1) {
+                echo "<li><a href=".$folder."page/admin.php>Admin panel</a></li>";
+                }
             echo "<li><a href='#'>".$_SESSION["user"]->lastname." ".$_SESSION["user"]->firstname."</a></li>";
             echo "<li><a href=".$folder."page/logout.php".">Logout</a></li>";
                 } ?>
