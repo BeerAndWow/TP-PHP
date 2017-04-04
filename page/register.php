@@ -133,7 +133,7 @@ if (!empty($_POST)) {
         // On log l'utilisateur et on le redirige vers sa page profil
         if ($user_id > 0) {
             setFlashbag("Enregistrement réussi : ".$firstname." ".$lastname." !");
-
+            header("location: login.php");
         }
 
         // Si l'enregistrement à échoué on affiche un message d'erreur
