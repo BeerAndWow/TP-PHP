@@ -32,7 +32,7 @@ include_once $folder.'header.php';
             echo "</div>";
             echo "<div class='col-md-6'>";
             echo "<h3>".$article->content." "."</h3>";
-            echo "<br>"."<h3>"."Pick one for only : "."<strong>".$article->price." €</strong>"."  "."<button class='btn btn-success'>Add to Cart</div></h3>";
+            echo "<br>"."<h3>"."Pick one for only : "."<strong>".$article->price." €</strong>"."  "."<button type='submit' class='btn btn-success'>Add to Cart</div></h3>";
             echo "</div>";
 
             

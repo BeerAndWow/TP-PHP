@@ -7,8 +7,8 @@
 
 $email_log      = null;
 $password_log   = null;
-$firstname   = null;
-$lastname   = null;
+$firstname      = null;
+$lastname       = null;
 
 // l'envois du formulaire via la methode POST
 if (!empty($_POST)) {
@@ -16,7 +16,7 @@ if (!empty($_POST)) {
     // Récupération des données de $_POST
     $email_log      = formatString($_POST['email_log']);
     $password_log   = formatString($_POST['password_log']);
-    $login = getUserByEmail($email_log);
+    $login          = getUserByEmail($email_log);
 
     // Cryptage du mot de passe
 
