@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Lun 03 Avril 2017 à 13:55
+-- Généré le :  Mar 04 Avril 2017 à 12:06
 -- Version du serveur :  10.1.19-MariaDB
 -- Version de PHP :  7.0.13
 
@@ -51,9 +51,9 @@ INSERT INTO `articles` (`id`, `name`, `content`, `price`, `picture`, `stock`, `i
 (9, 'Nikka', 'Get to know this unique spirit and enjoy an exceptional tasting as Nikka brand ambassador Stanislav Vadrna guides you through the art of Japanese bartending and the ICHIGO ICHIE philosophy of one meeting, one encounter.  This gift pack comes ready to serve with a bottle of Nikka From The Barrel blended whisky, a cocktail glass and a pourer.', 80, 'img/whisky/article13.jpg', 3, 0),
 (10, 'Penderyn', 'Penderyn Peated Single Malt Welsh Whisky is a limited bottling of approximately 5,000 per year. Completely hand crafted, the unique distillation and maturation produces a single malt whisky in which a soft and unique spirit underlies a medium peaty character with light golden tone.', 57, 'img/whisky/article16.jpg', 3, 0),
 (11, 'Casa Magna', 'Casa Magna Colorado is the brainchild of two of the cigar industry''s most revered manufacturers, Manuel Quesada and Nestor Plascencia. This Nicaraguan Puro is full-bodied and moderately priced. Comprised of Ligero and Viso fillers from several different regions of Nicaragua and a beautiful Cuban-seed Ligero Colorado wrapper, the Casa Magna is hand-rolled in Plascencia''s Nicaraguan Factory. The result is a smooth, rich, full-bodied cigar with undertones of coffee and sweet spices. A well-made slow-burner at a great price. \n', 6, 'img/cigar/cigar2.jpg', 20, 1),
-(12, 'Partagás', 'An attractive sun-grown beauty unlike any other Partagas cigar blend.\n\nPartagas Black is an enticing full-bodied cigar, full and rich. Partagas'' gorgeous, oily, medio tiempo sun-grown wrappers and large rings (54-60) are the perfect vehicles to deliver the powerful blend of Nicaraguan and Cuban-seed ligero fillers. Excellent construction, a gentle draw, and rich, robust character make this a bold and enticing cigar.\n\nPartagas Black Label received a well-deserved 90-rating noting: "This alluring cigar has an herbal flavor. It develops a rich, earthy character and fills out with a nutty taste."', 9, 'img/cigar/cigar3.jpg', 18, 1),
-(13, 'Davidoff', 'A fire spittin’ Griffin\n\nOh yeah, this Griffin’s spittin’ some fire. A favorite among the wine and cheese crowd, The Griffin’s are usually mentioned in the same breath as Ashton, Diamond Crown, and Davidoff – which makes sense because they’re made by Davidoff – and to this point have been known for their elegant and creamy flavor profile. This is where The Griffin’s Nicaragua enters the picture and brings the heat. \n\nThe Griffin’s Nicaragua is the first time this brand has utilized tobaccos from Nicaragua and Honduras. Medium to full-bodied, edging towards the fuller end of the spectrum, The Griffin’s Nicaragua comes draped in a Nicaraguan Habano wrapper atop a blend of Nicaraguan and Honduran long-fillers. You’ll be instantly hit with spice and pepper before the profile progresses to include notes of cream, cedar, hay, and coffee. If you’ve been looking for a premium, balanced, and complex medium to full-bodied blend, you won’t go wrong with The Griffin’s Nicaragua. \n\n​', 9, 'img/cigar/cigar4.jpg', 27, 1),
-(14, 'Cohiba', 'Here''s the deal: I''ve compiled 20 top-notch Churchills from the world''s biggest and most high-end brands, packed them in a gorgeous glasstop humidor, and discounted the heck out of it. Over $250 off, 69% below MSRP, call it what you will. But no matter what you call it, this deal is killer. Treat yourself to the best and enjoy unthinkable savings on the delicious, prestigious Montecristo and Cohiba brands. Big flavor, big Churchills, big brands, big discount...tiny price. Put a bow on it and call it a day.', 18, 'img/cigar/cigar5.jpg', 8, 1),
+(12, 'Davidoff', 'An attractive sun-grown beauty unlike any other Partagas cigar blend.\n\nPartagas Black is an enticing full-bodied cigar, full and rich. Partagas'' gorgeous, oily, medio tiempo sun-grown wrappers and large rings (54-60) are the perfect vehicles to deliver the powerful blend of Nicaraguan and Cuban-seed ligero fillers. Excellent construction, a gentle draw, and rich, robust character make this a bold and enticing cigar.\n\nPartagas Black Label received a well-deserved 90-rating noting: "This alluring cigar has an herbal flavor. It develops a rich, earthy character and fills out with a nutty taste."', 9, 'img/cigar/cigar3.jpg', 18, 1),
+(13, 'Cohiba', 'A fire spittin’ Griffin\n\nOh yeah, this Griffin’s spittin’ some fire. A favorite among the wine and cheese crowd, The Griffin’s are usually mentioned in the same breath as Ashton, Diamond Crown, and Davidoff – which makes sense because they’re made by Davidoff – and to this point have been known for their elegant and creamy flavor profile. This is where The Griffin’s Nicaragua enters the picture and brings the heat. \n\nThe Griffin’s Nicaragua is the first time this brand has utilized tobaccos from Nicaragua and Honduras. Medium to full-bodied, edging towards the fuller end of the spectrum, The Griffin’s Nicaragua comes draped in a Nicaraguan Habano wrapper atop a blend of Nicaraguan and Honduran long-fillers. You’ll be instantly hit with spice and pepper before the profile progresses to include notes of cream, cedar, hay, and coffee. If you’ve been looking for a premium, balanced, and complex medium to full-bodied blend, you won’t go wrong with The Griffin’s Nicaragua. \n\n​', 9, 'img/cigar/cigar4.jpg', 27, 1),
+(14, 'Partagas', 'Here''s the deal: I''ve compiled 20 top-notch Churchills from the world''s biggest and most high-end brands, packed them in a gorgeous glasstop humidor, and discounted the heck out of it. Over $250 off, 69% below MSRP, call it what you will. But no matter what you call it, this deal is killer. Treat yourself to the best and enjoy unthinkable savings on the delicious, prestigious Montecristo and Cohiba brands. Big flavor, big Churchills, big brands, big discount...tiny price. Put a bow on it and call it a day.', 18, 'img/cigar/cigar5.jpg', 8, 1),
 (15, 'Padrón	', 'Padron cigars are a series of robust Nicaraguan handmades boasting a deep and complex flavor. This brand continually gets high marks for consistency, and as such enjoys a loyal and enduring fan base.\n\nPadron cigars are Nicaraguan puros, as all of the leaves utilized to create the cigar are cultivated from the fertile soils of Esteli, Nicaragua. This mesmerizing mixture of hearty tobaccos produces a rich, robust smoke and offers a complex array of flavor capped off with a sweet finish.\n\nPadron....best of the best. A collection of Padron''s finest make up this premium sampler. Available in either Natural or Maduro.', 32, 'img/cigar/cigar6.jpg', 2, 1),
 (16, 'Nicaragua Habanos', 'If you thought Tatuaje was tough to say, try Cabaiguan on for size!\n\nCabaiguan is hand-crafted by Jose ''Don Pepin'' Garcia in the El Rey de los Habanos factory, the same factory as Tatuaje, 5 Vegas Miami, and a series of Don Pepin Garcia cigars. Tough to say, but easy to burn, this mild to medium-bodied blend employs a smooth Connecticut seed wrapper grown under the valley mist of Ecuador. Inside, a Cuban-seed mixture of Nicaraguan long-fillers is carefully blended to promote a flavorful cigar layered with rich, hearty nuances.', 11, 'img/cigar/cigar1.jpg', 45, 1);
 
@@ -82,15 +82,16 @@ CREATE TABLE `users` (
   `email` varchar(200) NOT NULL,
   `birthday` date NOT NULL,
   `password` varchar(200) NOT NULL,
-  `genre` varchar(2) NOT NULL
+  `genre` varchar(2) NOT NULL,
+  `role` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `users`
 --
 
-INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `birthday`, `password`, `genre`) VALUES
-(1, 'Renato', 'DURIEZ', 'renato.duriez@gmail.com', '1995-04-21', 'ceciestmdp0', 'M');
+INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `birthday`, `password`, `genre`, `role`) VALUES
+(1, 'Renato', 'DURIEZ', 'renato.duriez@gmail.com', '1995-04-21', 'ceciestmdp0', 'M', 1);
 
 --
 -- Index pour les tables exportées

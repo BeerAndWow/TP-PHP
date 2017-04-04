@@ -1,5 +1,14 @@
-h1,h2,h3{
+h1,h2,h3 {
+color: white;
 font-family : 'Marcellus SC', serif;
+}
+li {
+    color: white;
+    font-family : 'Marcellus SC', serif;
+    font-size: 150%;
+}
+nav {
+    margin-top: -1.2%;
 }
 body{
     background-image: url("../img/Background_.jpg");
@@ -25,6 +34,8 @@ body{
 }
 .navbar-default .navbar-brand{
     color: silver;
+    font-family : 'Marcellus SC', serif;
+    font-size: 250%;
 }
 #banner{
     padding: 0;
@@ -39,4 +50,17 @@ h3{
 }
 strong{
     text-align: right;
+}
+label{
+    color: white;
+}
+.row{
+    margin-right:0;
+    margin-left:0;
+}
+.container{
+    padding: 0;
+}
+h1{
+    text-align: center;
 }
