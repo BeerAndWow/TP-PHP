@@ -9,8 +9,9 @@ include_once $folder.'config.php';
 include_once $folder.'function/autoload.php';
 include_once $folder.'header.php';
 ?>
-<h1>Nouvel article</h1>
+
 <div class="col-md-4 col-md-offset-4">
+<h1>Nouvel article</h1>
 <form method="POST">
     <div class="form-group">
         <label for="name" class="control-label" >Article name</label>
