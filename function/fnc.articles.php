@@ -32,7 +32,7 @@ function getArticlesCategory($category) {
 /**
  * Ajoute un article en BDD et retourne son ID
  */
-function setArticle($category, $name, $content, $picture) {
+function setArticle($category, $name, $content, $picture, $price, $stock) {
 
     global $bdd;
 
